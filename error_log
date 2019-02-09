@@ -1,0 +1,8 @@
+[29-Dec-2016 10:53:14] PHP Fatal error:  Call to a member function listar_pesquisa() on a non-object in /home/paraibar/public_html/application/controllers/gerenciador/clientes.php on line 61
+[29-Dec-2016 10:54:33] PHP Fatal error:  Call to undefined method Cliente::listar_pesquisa() in /home/paraibar/public_html/application/controllers/gerenciador/clientes.php on line 61
+[29-Dec-2016 11:32:21] PHP Parse error:  syntax error, unexpected T_CONSTANT_ENCAPSED_STRING in /home/paraibar/public_html/application/views/gerenciador/clientes/lista_cliente.php on line 107
+[02-Feb-2017 11:00:27] PHP Fatal error:  Call to a member function get_prato() on a non-object in /home/paraibar/public_html/application/views/pagamento/index.php on line 87
+[02-Feb-2017 11:02:40] PHP Fatal error:  Call to a member function get_prato() on a non-object in /home/paraibar/public_html/application/views/pagamento/index.php on line 87
+[02-Feb-2017 11:02:42] PHP Fatal error:  Call to a member function get_prato() on a non-object in /home/paraibar/public_html/application/views/pagamento/index.php on line 87
+[02-Feb-2017 11:02:56] PHP Fatal error:  Call to a member function get_prato() on a non-object in /home/paraibar/public_html/application/views/pagamento/index.php on line 87
+[02-Feb-2017 11:05:56] PHP Fatal error:  Call to a member function get_prato() on a non-object in /home/paraibar/public_html/application/views/pagamento/index.php on line 86

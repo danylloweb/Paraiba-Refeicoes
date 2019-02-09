@@ -1,0 +1,329 @@
+/**
+ * ESTILOS GERAIS DOS ELEMENTOS DO FORMULÁRIO
+ */
+input, textarea, select {
+	border-left: 1px solid #D5D5D5;
+	border-top: 1px solid #D5D5D5;
+	border-right: 1px solid #BBBBBB;
+	border-bottom: 1px solid #BBBBBB;
+	border-radius: 2px;
+	margin: 0px;
+	padding: 5px 7px;
+	font-family: sans-serif;
+	font-size: 12px;
+	background-color: #FFFFFF;
+	color: #555555;
+}
+
+input, textarea { width: 90%; }
+textarea { height: 76px; }
+
+select { padding: 4px; }
+
+input[type="radio"],
+input[type="checkbox"] {
+	width: 13px !important;
+	height: 13px !important;
+	vertical-align: bottom;
+}
+
+.preview {
+	display: none;
+	position: absolute;
+	border: 1px solid #CCCCCC;
+	padding: 10px;
+	box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2);
+	background-color: #FFFFFF;
+	z-index: 1;
+}
+
+.preview img {
+	display: block;
+	width: 250px;
+	height: auto;
+}
+
+.focus { 
+	border-color: #4C82C5 !important; 
+	box-shadow: 0px 0px 4px rgba(0, 64, 144, 0.5);
+}
+
+.button {
+	display: table;
+	border-radius: 3px;
+	height: 27px;
+	padding: 0px 15px;
+	font-size: 14px;
+	text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.3);
+	box-shadow: 0px -1px 0px rgba(255, 255, 255, 0.2) inset;
+	line-height: 27px;
+	cursor: pointer;
+}
+
+.button.green {
+	border-top: 1px solid #90DE2A;
+	border-bottom: 1px solid #4D8216;
+	background: -moz-linear-gradient(top,  #b1fa27 0%, #5cab1c 100%);
+	background: -webkit-linear-gradient(top,  #b1fa27 0%,#5cab1c 100%);
+	background: -o-linear-gradient(top,  #b1fa27 0%,#5cab1c 100%);
+	background: -ms-linear-gradient(top,  #b1fa27 0%,#5cab1c 100%);
+	color: #FFFFFF;
+}
+
+.button.green:hover {
+	border-top: 1px solid #BDF54C;
+	border-bottom: 1px solid #79AF2B;
+	background: -moz-linear-gradient(top,  #d9fe48 0%, #8dd837 100%);
+	background: -webkit-linear-gradient(top,  #d9fe48 0%,#8dd837 100%);
+	background: -o-linear-gradient(top,  #d9fe48 0%,#8dd837 100%);
+	background: -ms-linear-gradient(top,  #d9fe48 0%,#8dd837 100%);
+	color: #426411;
+}
+
+.button.blue {
+	border-top: 1px solid #ADDCEE;
+	border-bottom: 1px solid #223985;
+	background: -moz-linear-gradient(top,  #4da7e5 0%, #3464a4 100%);
+	background: -webkit-linear-gradient(top,  #4da7e5 0%,#3464a4 100%);
+	background: -o-linear-gradient(top,  #4da7e5 0%,#3464a4 100%);
+	background: -ms-linear-gradient(top,  #4da7e5 0%,#3464a4 100%);
+	color: #FFFFFF;
+}
+
+.button.blue:hover {
+	border-top: 1px solid #DFF7FC;
+	border-bottom: 1px solid #4064BD;
+	background: -moz-linear-gradient(top,  #7edaf9 0%, #5e9ddb 100%);
+	background: -webkit-linear-gradient(top,  #7edaf9 0%,#5e9ddb 100%);
+	background: -o-linear-gradient(top,  #7edaf9 0%,#5e9ddb 100%);
+	background: -ms-linear-gradient(top,  #7edaf9 0%,#5e9ddb 100%);
+	color: #223985;
+}
+
+#center form {
+	display: block;
+	width: 100%;
+}
+
+#center form fieldset {
+	display: table;
+	width: 100%;
+}
+
+#center form ul {
+	display: table;
+	width: 100%;
+}
+
+#center form ul li {
+	display: table-row;
+	width: 100%;
+}
+
+#center form ul li p {
+	display: table-cell;
+	width: 400px;
+	padding-bottom: 15px;
+}
+
+#center form .full { width: 100%; }
+#center form .full textarea { width: 655px; height: 240px; }
+
+#center form .block { 
+	display: table;
+	margin-bottom: 8px;
+}
+
+#center form .inline { 
+	margin-right: 10px; 
+}
+
+#center form .title {
+	display: table;
+	width: 100%;
+	margin-bottom: 7px;
+	color: #0066CC;
+}
+
+#center form .title sup {
+	color: #FF0000;
+	padding-left: 2px;
+}
+
+#center .buttons {
+	width: 100%;
+	border-top: 1px dotted #CCCCCC;
+	margin: 20px 0px;
+	padding: 20px 0px;
+}
+
+#center .upload {
+	display: table;
+	width: 100%;
+}
+
+#center .upload .input {
+	display: table;
+	width: 100%;
+	margin-bottom: 15px;
+	padding-bottom: 15px;
+	border-bottom: 1px solid #CCCCCC;
+}
+
+#center .upload .input a {
+	float: left;
+	margin-right: 10px;
+}
+
+#center .upload .input input {
+	visibility: hidden;
+	width: 0px;
+	height: 0px;
+}
+
+#center .upload .container {
+	display: block;
+	width: 100%;
+}
+
+#center .upload .container li {
+	position: relative;
+	float: left;
+	width: 100%;
+	border-bottom: 1px solid #CCCCCC;
+	padding-bottom: 10px;
+	margin-bottom: 10px;
+}
+
+#center .upload .container span {
+	position: absolute;
+	display: block;
+	left: 0px;
+	bottom: 0px;
+	width: 0%;
+	height: 5px;
+}
+
+#center .upload .container span.uploaded { background-color: #00FF00; }
+#center .upload .container span.uploading { background-color: #FFFF00; }
+
+#center .upload .container div {
+	float: left;
+	margin-right: 10px;
+}
+
+#center .upload .container a {
+	overflow: hidden;
+	display: block;
+	width: 16px;
+	height: 16px;
+	text-indent: -10000px;
+}
+
+#center .upload .container a.delete { background: transparent url('../imagens/icons/delete-small.png') no-repeat center center; }
+#center .upload .container a.success { background: transparent url('../imagens/icons/success-small.png') no-repeat center center; }
+
+#center .upload .container img {
+	display: block;
+	border: 1px solid #DDDDDD;
+	width: 80px;
+	height: 60px;
+	padding: 4px;
+}
+
+#center .upload .container h4 {
+	float: left;
+	margin-bottom: 8px;
+	font-size: 14px;
+	font-weight: bold;
+}
+
+#center .upload .container h4 small {
+	display: block;
+	padding-top: 7px;
+	font-size: 11px;
+	font-weight: normal;
+	color: #777777;
+}
+
+.scroll {
+	display: block;
+	overflow: auto;
+	border: 1px solid #CCCCCC;
+	border-radius: 2px;
+	width: 100%;
+	height: 200px;
+}
+
+.scroll label {
+	float: left;
+	width: 214px;
+	height: 15px;
+	padding: 5px;
+}
+
+.picture {
+	position: relative;
+	float: left;
+	border: 1px solid #CCCCCC;
+	width: 120px;
+	height: 130px;
+	padding: 5px;
+	margin: 0px 10px 10px 0px;
+	background-color: #FFFFFF;
+}
+
+.picture img {
+	display: block;
+	width: 120px;
+	height: 100px;
+}
+.picture .checkFoto {position: absolute; bottom: 15px;}
+.picture a {
+	display: block;
+	overflow: hidden;
+	position: absolute;
+	bottom: 10px;
+	right: 0px;
+	width: 24px;
+	height: 24px;
+	text-indent: -10000px;
+	background: transparent url('../../imagens/admin/delete-small.png') no-repeat center center;
+}
+
+.picture small {
+	position: relative;
+	display: block;
+	padding-top: 5px;
+}
+
+.picture small a {
+	display: block;
+	position: absolute;
+	top: 11px;
+	right: -5px;
+	background: none;
+}
+
+.picture small a img {
+	display: block;
+	width: 16px;
+	height: 16px;
+}
+
+.picture small input {
+	width: 92px;
+	padding-right: 20px;
+}
+
+.linha {
+	float: left;
+	width: 550px;
+	margin-bottom: 4px;
+}
+
+.linha input {
+	width: 400px;
+}
+
+#cke_descricao {width: 635px !important;}

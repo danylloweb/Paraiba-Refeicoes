@@ -1,0 +1,2 @@
+[27-Aug-2015 18:13:00] PHP Fatal error:  Call to undefined function  site_url() in /home/paraibar/public_html/public/scripts/enviapesquisa.php on line 72
+[27-Aug-2015 18:13:22] PHP Fatal error:  Call to undefined function  site_url() in /home/paraibar/public_html/public/scripts/enviapesquisa.php on line 72

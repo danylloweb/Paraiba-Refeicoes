@@ -1,0 +1,96 @@
+html, body {
+	height: 100%;
+	font-family: sans-serif;
+	font-size: 12px;
+	color: #444444;
+}
+
+body {
+	background: #FFFFFF url('../imagens/admin/background.png');
+}
+
+/**
+ * BOX
+ */
+#box {
+	position: relative;
+	border: 1px solid #CCCCCC;
+	border-radius: 4px;
+	width: 450px;
+	height: 260px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin-top: -125px;
+	margin-left: -250px;
+	box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.2);
+	background: -moz-linear-gradient(top,  #ffffff 89%, #e5e5e5 100%);
+	background: -webkit-linear-gradient(top,  #ffffff 89%,#e5e5e5 100%);
+	background: -o-linear-gradient(top,  #ffffff 89%,#e5e5e5 100%);
+	background: -ms-linear-gradient(top,  #ffffff 89%,#e5e5e5 100%);
+}
+
+#box .message {
+	position: absolute;
+	bottom: 270px;
+	left: 0px;
+	border-top: 1px solid #FFFFFF;
+	border-right: 1px solid #DDDDDD;
+	border-bottom: 1px solid #C9CAAD;
+	border-radius: 3px;
+	width: 100%;
+	padding: 14px 0px;
+	text-align: center;
+	color: #444444;
+	background-color: #FDFFD2;
+	cursor: pointer;
+}
+
+#box h1 {
+	overflow: hidden;
+	border-right: 1px dotted #CCCCCC;
+	float: left;
+	width: 130px;
+	height: 220px;
+	margin: 20px 0px;
+	text-indent: -10000px;
+	background: transparent url('../imagens/admin/logo-lumen.png') no-repeat center center;
+}
+
+#box form {
+	float: right;
+	width: 285px;
+	height: 220px;
+	margin: 20px 0px;
+}
+
+#box form h2 {
+	font-size: 18px;
+	margin-bottom: 25px;
+	color: #004090;
+}
+
+#box form label {
+	display: table;
+	margin-bottom: 15px;
+}
+
+#box form label i {
+	overflow: hidden;
+	float: left;
+	border: 1px solid #D5D5D5;
+	border-bottom: 1px solid #BBBBBB;
+	border-right: none;
+	border-radius: 2px 0px 0px 2px;
+	width: 29px;
+	height: 29px;
+	text-indent: -10000px;
+}
+
+#box form label i.at { background: transparent url('../imagens/admin/icons/at.png') no-repeat center center; }
+#box form label i.lock { background: transparent url('../imagens/admin/icons/lock.png') no-repeat center center; }
+
+#box form label input {
+	width: 200px;
+	padding: 7px;
+}

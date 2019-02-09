@@ -1,0 +1,1667 @@
+@charset "utf-8";
+/* =============================================================================
+  Fonts
+   ========================================================================== */
+@font-face {
+    font-family: 'Times New';
+    src: url('../fonts/times-webfont.eot');
+    src: url('../fonts/times-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/times-webfont.woff') format('woff'),
+         url('../fonts/times-webfont.ttf') format('truetype'),
+         url('../fonts/times-webfont.svg#times_new_romanregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'Chunk';
+    src: url('../fonts/chunkfive-webfont.eot');
+    src: url('../fonts/chunkfive-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/chunkfive-webfont.woff') format('woff'),
+         url('../fonts/chunkfive-webfont.ttf') format('truetype'),
+         url('../fonts/chunkfive-webfont.svg#chunkfiveroman') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+*
+{
+  -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+  -moz-box-sizing: border-box;    /* Firefox, other Gecko */
+  box-sizing: border-box;         /* Opera/IE 8+ */
+  font-variant: 'Times New';
+}
+
+h1,h2,h3,h4
+{
+  margin: 0;
+  padding: 0;
+}
+body
+{
+  background: #fff !important;
+}
+/*==============================================================================
+=            CLASSES GERAIS            =
+================================================================================*/
+.center
+{
+  width: 960px;
+  margin: 0 auto;
+}
+.sprit
+{
+  background: url('../imagens/sprit.png') no-repeat;
+  float: left;
+}
+
+.btn-1
+{
+  background-color: #efeeee;
+  box-shadow: inset 1px 1px 16px #B1B1B1;
+  padding: 10px 15px;
+  border-radius: 7px;
+  border: 1px solid #a9a9a9;
+  font-family:"Times New";
+  font-size: 16px;
+  color: #656d72;
+  margin-bottom: 15px;
+}
+.bt-atualiza
+{
+  font-size: 15px;
+  padding: 8px 10px;
+  float: right;
+  margin-bottom: 0;
+  cursor: pointer;
+  text-align: center;
+}
+.btn-1:hover
+{
+  color: #8e1813;
+}
+.titulos-1
+{
+  font-family: "Times New";
+  font-size: 31px;
+  color: #343434;
+  font-weight: bold;
+  border-bottom: 1px solid #a9a9a9;
+  padding-bottom: 15px;
+}
+.t-2
+{
+  width: 100%;
+  float: left;
+  background: url('../images/line-bg.jpg') repeat-x left center;
+}
+.titulos-2
+{
+  font-family: "Times New";
+  font-size: 26px;
+  color: #343434;
+  font-weight: bold;
+  text-align: center;
+  background: #fff;
+  width: 35%;
+  margin: 0 auto
+}
+
+.titulos-1 span
+{
+  color: #B80F08;
+}
+.ic-car
+{
+  background-position: 0 -2px;
+  width: 30px;
+  height: 27px;
+}
+.ic-car.atv
+{
+  background-position: 0 -43px;
+}
+.ic-cadastro
+{
+  background-position: -40px -9px;
+  width: 25px;
+  height: 14px;
+}
+.ic-cardp
+{
+  background-position: -77px -8px;
+  width: 20px;
+  height: 30px;
+}
+.ic-mail
+{
+  background-position: -110px -17px;
+  width: 12px;
+  height: 9px;
+}
+.ic-fone
+{
+  background-position:  -133px -17px;
+  width: 13px;
+  height: 12px;
+}
+.ic-chave
+{
+  background-position: -157px -12px;
+  width: 17px;
+  height: 18px;
+}
+.ic-plus
+{
+  background-position:  -220px -8px;
+  width: 26px;
+  height: 26px;
+}
+.ic-alteradado
+{
+  background-position: -186px -12px;
+  width: 22px;
+  height: 19px;
+}
+.ic-cadeado
+{
+  background-position: -102px -44px;
+  width: 74px;
+  height: 88px;
+}
+.center-logo
+{
+  width: 211px;
+  margin: 0 auto;
+}
+.t-page
+{
+  width: 100%;
+  float: left;
+  text-align: center;
+  font-family: 'Chunk';
+  font-size: 31px;
+  color: #991314;
+  margin-top: 60px;
+}
+/*===========================================================
+=            TOPO            =
+=============================================================*/
+#topo
+{
+  width: 100%;
+  height: 200px;
+  float: left;
+  background: url('../imagens/bg-top.png') repeat-x;
+}
+#topo #logo
+{
+  width: 211px;
+  height: 196px;
+  float: left;
+  background: url('../imagens/logo.png') no-repeat;
+  margin: 40px 0;
+}
+
+
+/* PEDIDO  */ 
+
+#box-pedidos
+{
+  width: 100%;
+  float: left;
+  margin-top: 30px;
+}
+
+.txt1
+{
+  width: 100%;
+  float: left;
+  font-family: 'Times New';
+  font-size: 21px;
+  color: #343434;
+}
+.pedido-dia 
+{
+  margin: 20px 0;
+  border-bottom: 1px solid #BBBBBB;
+  padding-bottom: 20px;
+}
+.txt1 span
+{
+  font-size: 31px;
+  font-weight: bold;
+}
+.bloco-monte
+{
+  width: 660px;
+  float: left;
+}
+.bloco-monte .escolha
+{
+  width: 100%;
+  float: left;
+  font-size: 16px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+.bloco-monte .obs
+{
+  width: 100%;
+  float: left;
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+.box-carrinho
+{
+  width: 230px;
+  float: right;
+  background: #fff;
+  border: 1px solid #b3b3b3;
+  padding: 15px 20px;
+}
+.box-carrinho .img-car
+{
+  width: 100%;
+  height: 36px;
+  float: left;
+  background: url('../imagens/carrinho-ic.png') no-repeat center;
+  margin-top: 00px;
+}
+.box-carrinho h1
+{
+  width: 100%;
+  float: left;
+  text-align: center;
+  font-family: 'Chunk';
+  font-size: 24px;
+  font-weight: normal;
+  color: #991314;
+  margin-bottom: 5px;
+  margin-top: 5px;
+
+}
+.box-carrinho .qtd-car
+{
+  width: 100%;
+  float: left;
+  text-align: center;
+  font-family: 'Times New';
+  font-size: 21px;
+  color: #343434;
+}
+.box-carrinho .qtd-car span
+{
+  font-size: 31px;
+  font-weight: bold;
+  line-height: 50px;
+}
+.box-carrinho .btn-1
+{
+  float: left;
+  margin-top: 20px;
+  margin-bottom: 0;
+  margin-left: 35px;}
+
+/*============================================================================
+=            Section comment block            =
+==============================================================================*/
+#wrap-centro
+{
+  width: 100%;
+  float: left;
+}
+#wrap-centro #content-conteudo
+{
+  width: 70%;
+  float: left;
+}
+#content-conteudo #box-promo
+{
+  width: 100%;
+  float: left;
+}
+#content-conteudo #box-promo #slid-box
+{
+  width: 100%;
+  height: 240px;
+  border-radius: 17px;
+}
+#content-conteudo #box-promo .slideshow
+{
+  width: 100%;
+  float: left;
+  height: 240px;
+  border-radius: 17% !important;
+  list-style: none;
+}
+#content-conteudo #box-promo .slideshow ul
+{
+  width: 100%;
+  list-style: none;
+}
+#content-conteudo #box-promo .slideshow li
+{
+  width: 100%;
+  height: 240px;
+  float: left;
+  list-style: none;
+}
+#content-conteudo #box-promo .slideshow img
+{
+  border-radius: 17px;
+  width: 100%;
+  height: 100%;
+}
+#content-conteudo #box-promo .slideshow  .desc-slid
+{
+  width: 40%;
+  float: right;
+  position: relative;
+  top: -200px;
+  right: 5px;
+  z-index: 5;
+}
+#content-conteudo #box-promo .slideshow  .desc-slid .dt-slid
+{
+  float: right;
+  padding: 15px;
+  font-family: 'Times News';
+  font-size: 31px;
+  color: #8e1813;
+  background: #fff;
+  position: relative;
+  z-index: 2;
+  top: 7px;
+  border-radius: 15px;
+}
+#content-conteudo #box-promo .slideshow  .desc-slid .txt-slid
+{
+  width: 100%;
+  float: left;
+  background: #fff;
+  padding: 15px;
+  font-family: 'Times New';
+  font-size: 14px;
+  line-height: 18px;
+  color: #343434;
+  border-radius: 15px;
+  margin-top: -10px;
+}
+#content-conteudo #box-promo #nav
+{
+  margin: 0 auto;
+  top: -25px;
+  position: relative;
+  z-index: 9999;
+}
+#content-conteudo #box-promo #nav span
+{
+  width: 20px;
+  height: 20px;
+  font-size: 1px;
+  float: left;
+  border: 3px solid #fff;
+  background: #323232;
+  cursor: pointer;
+  border-radius: 100%;
+  margin-right: 1px;
+}
+#content-conteudo #box-promo #nav .cycle-pager-active
+{
+  background: #8e1813;
+}
+
+/* Cardápio da Semana */
+#card-semana
+{
+  width: 100%;
+  float: left;
+  margin-bottom: 56px;
+}
+#box-card
+{
+  width: 100%;
+  height: 270px;
+  float: left;
+  background: url('../images/img-prato-semana.jpg') no-repeat center;
+  margin-top: 50px;
+}
+#box-card .dia-card-bt
+{
+  position: relative;
+  float: left;
+  transition:all 0.6s linear;
+}
+#box-card .dia-card-bt:hover
+{
+   box-shadow: inset 1px 1px 16px #525252;
+}
+#box-card .btn-1
+{
+  border-radius: 27px;
+  padding: 10px 20px;
+}
+#box-card .dia-card-bt span
+{
+  margin-right: 10px;
+}
+#box-card #segunda
+{
+  left: 75px;
+  top: -25px;
+
+}
+#box-card #sexta
+{
+  left: 341px;
+  top: 9px;
+}
+#box-card #terca
+{
+  left: -289px;
+  top: 65px;
+}
+#box-card #sabado
+{
+  left:70px;
+  top: 107px;
+}
+#box-card #quarta
+{
+  left: 13px;
+  top:101px;
+}
+#box-card #domingo
+{
+  left: 345px;
+  top:154px;
+}
+#box-card #quinta
+{
+  left: -198px;
+  top:190px;
+}
+
+#box-car-select
+{
+  width: 100%;
+  float: left;
+  border-radius: 7px;
+  padding:15px;
+  border: 1px solid #a9a9a9;
+  border-bottom: 5px solid #9d1f19; 
+}
+
+#box-car-select .list-pratos
+{
+  width: 100%;
+  float: left;
+  list-style: none;
+}
+#box-car-select .list-pratos li
+{
+  display: inline; 
+  float: left;
+  width: 50%;
+  font-family: 'Times New';
+  font-size: 14px;
+  color: #343434;
+  line-height: 18px
+}
+
+/*===================================================================
+=            SIDBAR-RIGHT            =
+=====================================================================*/
+
+#sid-right
+{
+  width: 25%;
+  float: right;
+  background: #fafafa;
+  border-left:1px solid #efefef;
+  padding: 10px;
+  margin-top: 30px;
+  padding-top: 20px;
+}
+#sid-right .titulos-2
+{
+  width: 80%;
+  background: #fafafa;
+  border-bottom: none;
+  height: 30px;
+}
+
+.box-2
+{
+  width: 100%;
+  float: left;
+  padding: 10px;
+  background: #fff;
+  border: 1px solid #b3b3b3;
+  border-radius: 7px; 
+  margin-bottom: 20px;
+}
+.box-2 h2
+{
+  margin: 0;
+  font-family: 'Times New';
+  font-size: 19px;
+  color: #343434;
+  font-weight: normal;
+  width: 100%;
+  text-align: center;
+}
+ #img-pedir
+{
+  width:100%;
+  height: 110px;
+  float: left;
+  background: url('../images/img-pedido-on.png') center no-repeat; 
+  margin: 10px 0;
+}
+ #bt-pedir
+{
+  float: left;
+  margin-left: 45px;
+  font-size: 24px;
+  padding: 10px 15px;
+  margin-top: 15px;
+  margin-bottom: 10px;
+}
+ #bt-pedir span
+{
+  margin-right: 10px;
+}
+
+#box-map
+{
+  width: 100%;
+  height: 175px;
+  float: left;
+  overflow: hidden;
+  border-radius: 7px;
+  border: 1px solid #b3b3b3;
+}
+
+.end-info
+{
+  width: 100%;
+  float: left;
+  margin-top: 20px;
+  font-family: 'Times New';
+  font-size: 14px;
+  color: #343434;
+  font-weight: normal;
+}
+.end-info b
+{
+  width: 100%;
+  float: left;
+  margin-top: 10px;
+}
+
+/*=============================================================
+=            RODAPE            =
+===============================================================*/
+#rodape
+{
+  width: 100%;
+  height: 95px;
+  float: left;
+  background: #991314;
+  margin-top: 40px;
+  text-align: center;
+  color: #fff;
+  padding-top: 30px;
+  font-family: arial;
+  font-size: 14px; 
+}
+#rodape span
+{
+  font-weight: bold;
+}
+
+
+#lumen
+{
+  width: 90px;
+  height: 21px;
+  float: right;
+  background: url('../images/logo-lumen.png');
+  margin-top: 90px;
+}
+
+.end-rp
+{
+  width: 66%;
+  float: left;
+  margin-top: 45px;
+  margin-left: -23px;
+}
+
+/*=========================================================
+=                    ETAPAS                                               =
+=========================================================*/
+.int
+{
+  margin-bottom: 0;
+}
+.nav-etapas
+{
+  width: 100%;
+  float: left;
+  padding:0px 15px;
+  border-bottom:1px solid #BBBBBB;
+}
+.nav-etapas ul
+{
+  list-style: none;
+  padding:0;
+  margin: 0;
+}
+.nav-etapas ul li
+{
+  float: left;
+  width: 150px;
+  font-family: 'Times New';
+  font-size: 16px;
+  color: #343434;
+  padding: 7px 0;
+  line-height: 30px;
+}
+.nav-etapas ul li span
+{
+  float: left;
+  margin-right: 10px;
+}
+.set-sep
+{
+  background-position: -50px -76px;
+  width: 23px;
+  height: 43px;
+  float: left;
+  margin: 0 42px;
+}
+.ic-id
+{
+  background-position: -41px 0;
+  width: 26px;
+  height: 30px;
+}
+.ic-end
+{
+  background-position: -76px 0;
+  width: 35px;
+  height: 29px;
+}
+.ic-pag
+{
+  background-position: -121px -3px;
+  width: 25px;
+  height: 27px;
+}
+.ic-pag.atv
+{
+  background-position:-121px -41px;  
+}
+.ic-end.atv
+{
+  background-position: -76px -41px;
+}
+.ic-id.atv
+{
+   background-position: -41px -41px;
+}
+
+.tab-carrinho
+{
+  width: 100%;
+  float: left;
+  margin-top: 20px;
+  font-family: 'Times New';
+}
+.tab-carrinho .t-carrinho
+{
+  font-family: 'Times New';
+  font-size: 22px;
+  text-transform: none;
+  color: #343434;
+
+}
+.tab-carrinho .info-marmita
+{
+  font-family: 'Times New';
+  font-size: 14px;
+  color: #343434;
+  width: 73%;
+  font-weight: normal;
+  text-transform: none;
+}
+.exclui-m
+{
+  background-position: -11px -86px;
+  width: 19px;
+  height: 19px;
+  margin-left: 32px;
+}
+.total-carrinho,
+.total-compra
+{
+  font-family: 'Times New';
+  font-size: 22px;
+  text-transform: none;
+  color: #343434;
+}
+.total-compra
+{
+  font-size: 24px;
+  font-weight: bold;
+  margin-top: 30px;
+  float: left;
+}
+.btn-1.right
+{
+  float: right;
+  margin-top: -10px;
+}
+.op-pag
+{
+  float: left;
+  margin: 23px 0 0 80px;
+  font-family: 'Times New';
+  font-size: 16px;
+}
+.op-pag input
+{
+  margin-top: 3px;
+  margin-right: 10px;
+}
+.maq
+{
+  margin-top: 33px;
+}
+.op-pag span
+{
+  margin-left: 40px;
+}
+#troco
+{ 
+  width: 100px;
+  float: none;
+}
+.finaliz-p
+{
+  margin-top: 30px;
+  margin-bottom: 100px;
+}
+.t-obrigado
+{
+  width: 100%;
+  text-align: center;
+  font-size: 18px;
+  margin-bottom: 200px;
+}
+/*===========================================================
+=            IDENTIFICAÇÃO                                  =
+===========================================================*/
+
+#box-login
+{
+  width: 290px;
+  float: left;
+  margin-top: 20px;
+  
+}
+.t-acesso
+{
+  width: 100%;
+  float: left;
+  font-family: 'Times New';
+  font-size:21px;
+  color: #343434;
+  margin: 10px 0;
+  font-weight: bold;
+}
+.txt-form
+{
+  width: 100%;
+  float: left;
+ font-family: 'Times New';
+  font-size:16px;
+  color: #343434;
+}
+.inputs
+{
+  width: 100%;
+  float: left;
+  height: 40px;
+  background: #fff;
+  padding-left: 10px;
+  border:1px solid #b3b3b3;
+  color: #343434;
+   font-family: 'Times New';
+  font-size:14px;
+}
+
+#bt-ok-login
+{
+  margin-top: 10px;
+}
+
+#box-cadastro
+{
+  width: 590px;
+  float: left;
+  margin-top: 20px;
+  margin-left: 50px;
+  margin-bottom: 60px;
+}
+
+.input-box
+{
+  float: left;
+  margin-right: 10px;
+}
+.input-box.type2
+{
+  width: 48%;
+  float: left;
+  margin-bottom: 20px;
+}
+.input-box.type3
+{
+  width: 23.2%;
+  float: left;
+  margin-bottom: 20px;
+}
+.senhas
+{
+  width: 40%;
+  float: left;
+}
+#referencia,
+.referencia
+{
+  width: 56.7%;
+  float: left;
+}
+.referencia
+{
+  height: 104px;
+}
+.cadastre-bt
+{
+  margin-right: 10px;
+}
+#box-confirma-dados
+{
+  width: 100%;
+  float: left;
+  margin-top: 20px;
+}
+/* Modal Login */ 
+
+.box-login,
+.box-cadastre
+{
+  width: 247px;
+  float: left;
+  background: #fff;
+  border-radius: 7px;
+  border: 1px solid #E6E6E6;
+  border-top: 4px solid #8e1813;
+  position: absolute;
+  padding: 10px;
+  z-index: 999999;
+  display: none;
+}
+.box-cadastre 
+{
+  width: 600px;
+}
+#modal-top
+{
+  margin: 218px 0 0 -59px;
+}
+#modal-cadastro-top
+{
+  margin: 38px 0 0 0;
+}
+.box-login .set,
+.box-cadastre .set
+{
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-bottom: 10px solid #8e1813;
+  height: 0;
+  width: 0;
+  padding: 0;
+  margin-top: -23px;
+  margin-left: 79px;
+  float: left;
+}
+.box-cadastre .set
+{
+  margin-left: 113px;
+}
+.input1
+{
+  width: 100%;
+  float: left;
+  height: 40px;
+  background: #fff;
+  border: 1px solid #E6E6E6;
+  border-radius: 5px;
+  padding-left: 10px; 
+  margin-bottom: 5px;
+}
+.input1.type1
+{
+  width: 49%;
+
+}
+.input1.type2
+{
+  width: 99%;
+  float: left;
+  height: 120px;
+  padding-top: 10px;
+}
+.link-modal
+{
+  width: 60%;
+  float: left;
+  font-family: 'Times New';
+  font-size: 16px;
+  font-weight: normal;
+  margin-top: 10px;
+  color: #343434;
+  text-decoration: underline;
+}
+
+
+
+.bt-login
+{
+  float: left;
+  padding: 7px 15px;
+  margin: 10px 0 5px 35px;
+}
+.bt-login span
+{
+  float: left;
+  margin: 2px 0 0 0; 
+}
+.bt-login input
+{
+  background: none;
+  float: left;
+  border: none;
+  font-family: "Times New";
+  font-size: 16px;
+  color: #656d72;
+}
+.bt-login:hover > input
+{
+  color: #8e1813;
+}
+
+.box-cadastre label
+ {
+  width: 125px;
+  font-family: 'Times New';
+  font-size: 14px;
+  color: #5e5e5e;
+  margin-bottom: 10px;
+  float: left;
+  margin-right: 5px;
+ }
+.box-cadastre input
+ {
+  margin-right: 5px;
+  margin-top: 5px;
+  float: left;
+ }
+
+ .forms-cadastro .bt-login
+ {
+  float: right;
+ }
+ .forms-cadastro .bt-login input
+ {
+  margin-top: 0;
+ }
+ .forms-cadastro > form
+  {
+  display: none;
+  }
+
+ .box-cadastre  > #abaCadastroF:checked ~ .forms-cadastro > #cadastroF,
+.box-cadastre  > #abaCadastroE:checked ~ .forms-cadastro > #cadastroE
+ {
+  display: block;
+ }
+
+ /* INTERNAS / INSTITUCIONAL */
+
+ #nav-interna
+ {
+  width: 100%;
+  float: left;
+  margin-bottom: 50px;
+ }
+ #nav-interna ul
+ {
+  list-style: none;
+  width: 100%;
+  float: left;
+ }
+ #nav-interna ul li
+ {
+  width: 100%;
+  float: left;
+  padding: 7px 15px;
+  border-bottom: 1px solid #000;
+ }
+ #nav-interna ul li a
+ {
+  font-family: 'Times New';
+  font-size: 19px;
+  color: #343434;
+ }
+ #nav-interna ul li:hover,
+ #nav-interna ul .activ
+ {
+  background: #8e1813;
+  border-radius: 17px;
+ }
+ #nav-interna ul li:hover > a,
+ #nav-interna ul .activ a
+ {
+  color: #fff;
+ }
+
+
+.interna-box
+{
+  width: 100%;
+  float: left;
+  font-family: 'Times New';
+  font-size: 14px;
+  text-align: justify;
+  color: #434250;
+}
+.interna-box .img-inst
+{
+  width: 50%;
+  height: 215px;
+  float: right;
+  overflow: hidden;
+  border-radius: 7px;
+  border-bottom: 3px solid #8e1813;
+  margin-left: 15px;
+}
+
+#box-fotos-ambiente
+{
+  width: 100%;
+  float: left;
+  margin-top: 30px;
+}
+#box-fotos-ambiente #slid-empresa
+{
+  width: 100%;
+  float: left;
+}
+#box-fotos-ambiente #slid-empresa img
+{
+  width: 140px;
+  height: 135px;
+  float: left;
+  border-radius: 17px;
+  margin-right: 27px;
+  border-bottom: 3px solid  #8e1813;
+}
+#box-fotos-ambiente #slid-empresa:last-child
+{
+  margin-right: 0;
+}
+#box-fotos-ambiente #box-navega
+{
+width: 100%;
+float: left;
+margin-top: 15px;
+}
+#box-fotos-ambiente #nav
+{
+  margin: 0 auto;
+}
+#box-fotos-ambiente #nav span
+{
+  font-size: 50px;
+}
+#box-fotos-ambiente #nav .cycle-pager-active
+{
+  color: #8e1813;
+}
+
+/*==============================================================
+=            PEDIDOS            =
+================================================================*/
+#head-pedido
+{
+  width: 100%;
+  float: left;
+  height: 180px;
+  background: #fafafa;
+  border-bottom: 1px solid #eaeaea;
+  margin-bottom: 25px;
+}
+
+.t-pedido
+{
+  width: 100%;
+  float: left;
+  font-family: 'Times New';
+  height: 115px;
+  background: url('../images/bg-h1-pedido.png') left no-repeat;
+  padding: 15px;
+}
+
+.t-pedido .t-1
+{
+  width: 20%;
+  float: left;
+  font-size: 42px;
+  color: #656d72;
+  margin-top: 5px;
+  margin-left: 15px;
+  line-height: 35px
+
+}
+.t-pedido .tt-2
+
+{
+  width: 51%;
+  font-size: 32px;
+  color: #656d72;
+  float: left;
+  margin-top: 27px;
+  margin-left: 29px;
+}
+.t-i-pedido
+{
+ float: left;
+}
+
+.set-t
+{
+border-left: 5px solid rgba(160, 13, 13, 1);
+border-right: 5px solid transparent;
+border-bottom: 5px solid rgba(142, 24, 19, 0);
+border-top: 5px solid rgba(0, 0, 0, 0);
+height: 0;
+width: 0;
+padding: 0;
+margin-top:10px;
+margin-left: 10px;
+float: left;
+}
+.txt-t
+{
+  float: left;
+  font-size: 18px;
+  margin-left: 5px;
+  margin-top: 2px;
+  font-weight: normal;
+}
+.interna-t1
+{
+  float: left;
+  width: 100%;
+}
+
+.box-select-dias
+{
+  width: 100%;
+  float: left;
+  margin-top: 15px;
+  margin-bottom: 30px;
+}
+.box-select-dias .check
+{
+  float: left;
+  margin-right: 5px;
+  margin-top: 5px;
+}
+.box-select-dias .label
+{
+  font-family: 'Times New';
+  font-size: 16px;
+  float: left;
+  line-height: 18px;
+  width: 115px;
+}
+
+#box-select-mar
+{
+  width: 100%;
+  float: left;
+  margin: 40px 0;
+}
+#box-select-mar ul
+{
+  padding: 0;
+  margin:0;
+}
+.select-ped
+{
+  width: 40%;
+  float: left;
+  font-family: 'Times New';
+  list-style:  none;
+  margin-right: 90px;
+}
+.select-ped .d-select
+{
+  width: 42%;
+  font-size: 20px;
+  float: left;
+  text-align: center;
+  font-weight: bold;
+
+}
+.select-ped .d-select span
+{
+  width: 100%;
+  float: left;
+  text-align: center;
+  font-size: 14px;
+  font-weight: normal;
+}
+ .selects
+{
+  height: 41px;
+  width: 58%;
+  border: 1px solid #b3b3b3; 
+  padding-left: 10px;
+  font-family: "times new"
+}
+ .selects.type1
+ {
+  font-size: 16px;
+  width: 30%;
+  margin-right: 15px;
+  margin-bottom: 10px;
+ }
+
+#wrap-monte
+{
+  width: 100%;
+  float: left;
+  margin-top: 40px;
+  padding: 0; 
+}
+
+#wrap-monte .select-ped
+{
+  width: 100%;
+  float: left;
+  margin-bottom: 30px;
+  border-bottom: 1px solid #b3b3b3;
+  padding-bottom:20px;
+}
+#wrap-monte .select-ped:last-child
+{border-bottom: none;}
+#wrap-monte .select-ped .d-select
+{
+  width: 15%;
+  height: 150px;
+}
+#wrap-monte .select-ped .selects
+{
+  width: 20%;
+   margin-bottom: 20px;
+  margin-right: 30px; 
+}
+.obs-ped
+{
+  width: 45%;
+  float: left;
+  margin-top: -12px;
+}
+.qt-input
+{
+  width: 40%;
+  float: right;
+  height: 41px;
+  border: 1px solid #b3b3b3;
+}
+
+.qt-ped
+{
+  width: 15%;
+  float:right;
+  margin-right: 65px;
+  margin-top: -20px;
+}
+
+.int-obs
+{
+ margin-top: 10px;
+font-size: 15px;
+width: 45%;
+}
+#box-finaliza
+{
+  width: 100%;
+  float: left;
+  margin-top: 30px;
+}
+#box-finaliza ul
+{
+  margin: 0;
+  padding: 0;
+}
+#box-finaliza .select-ped
+{
+  width: 100%;
+  margin-bottom: 20px;
+}
+#box-finaliza .select-ped .d-select
+{
+  width: 15%;
+}
+#box-finaliza .select-ped .selects
+{
+  width: 20%;
+  float: left;
+  margin-right: 30px;
+}
+#box-finaliza .select-ped .total
+{
+  margin-top: 5px;
+}
+#box-finaliza .select-ped .troco
+{
+  margin-top: 5px;
+  text-align: right;
+  width: 12%;
+  margin-left: 60px;
+}
+.dados-h1
+{
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+#box-dados
+{
+  width: 100%;
+  float: left;
+}
+#box-dados .f-cadastro
+{
+  width: 75%;
+}
+#box-dados .f-cadastro .input1
+{
+  border: 1px solid #b3b3b3;
+  margin-right: 10px;
+  width: 48%;
+}
+#box-dados .f-cadastro .bt-login
+{
+  margin-right: 60%;
+  margin-left: 0;
+float: left;
+}
+.input-gd
+{
+  border: 1px solid #b3b3b3;
+  width: 18%;
+  height: 41px;
+  padding-left: 15px;
+  float: right;
+  margin-right: 68px;
+}
+.in1,.in2
+{
+  float: right;
+  margin-right: 10px;
+  width: 12%;
+  padding-left: 7px;
+  margin-top: 0;
+}
+.box-select-op
+{
+  width: 85%;
+  float: left;
+  margin-bottom: 10px;
+}
+.empresa-select
+{
+  width: 100%;
+}
+.n-funcionario
+{
+  width: 45%;
+  margin-top: 20px;
+  float: left;
+  height: 80px;
+  font-family: "Times New";
+}
+
+.grade
+{
+  width: 85%;float: right;
+  margin-bottom: 25px;
+  border-bottom: 1px solid #b3b3b3;
+  padding-bottom: 25px;
+}
+.modulo:last-child
+{
+  border-bottom: none;
+}
+
+.bt-grade
+{
+  margin-left: 145px;
+}
+.t-serv
+{
+  color: #8e1813;
+  font-size: 14px;
+}
+/*===============================
+=            CONTATO            =
+===============================*/
+
+#form-contato
+{
+  width: 100%;
+  float: left;
+  margin-top: 20px;
+}
+.txt-contato
+{
+  font-family: "Times New";
+  width: 100%;
+  float: left;
+  margin: 0;
+}
+#form-contato .type-form
+{
+  width: 100%;
+  height: 65px;
+  float: left;
+  margin-bottom: 10px;
+  border-radius:  7px;
+  border: 1px solid #e3e3e3;
+  border-bottom: 3px solid #8e1813;
+  font-family: 'Times New';
+  padding-left: 15px;
+  font-size: 23px;
+}
+#form-contato #area-form
+{
+  height: 300px;
+}
+
+.bt-enviar-contato
+{
+  margin-left: 0;
+  float: right;
+}
+
+#splash-domingo
+{
+  width: 100%;
+  float: left;
+  height: 900px;
+  background: url('../images/domingos.jpg') center top;
+  background: cover;
+}
+.ranger {
+  margin: 0 auto;
+        width: 70px;
+}
+
+.ranger input {
+  margin: 0px;
+  float: left;
+  padding: 0px;
+  border: 1px solid #333;
+  background-color: #fff;
+  width: 45px;
+  height: 40px;
+  text-align: center;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.ranger a {
+  display: block;
+  margin-left: 45px;
+  width: 25px;
+  height: 20px;
+  background-color: #fff;
+  border-bottom: 1px solid #333;
+  border-right: 1px solid #333;
+  color: #333;
+  text-align: center;
+  line-height: 15px;
+  font-size: 28px;
+}
+
+.ranger a.mais {
+  border-top: 1px solid #333;
+  height: 20px;
+  line-height: 19px;
+  font-size: 22px;
+}
+
+
+.selec-ala
+{
+  width: 120px;
+  padding: 15px;
+  font-size: 12px !important;
+}
+
+
+.list-ala
+{
+  width: 100%;
+  float: left;
+  list-style: none;
+  padding: 0; 
+  margin: 0;
+}
+.list-ala li
+{
+  width: 100%;
+  float: left;
+  margin-bottom: 20px;
+  padding-bottom: 15px;
+  border-bottom: 1px solid #ccc;
+}
+.list-ala li .n-item
+{
+  width: 100%;
+  float: left;
+  font-family: 'Times New';
+  font-size: 18px;
+  color: #842020;
+}
+.list-ala li .desc-item
+{
+  width: 100%;
+  float: left;
+  font-family: 'Times New';
+  font-size: 16px;
+}
+.list-ala li .valor
+{
+  width: 15%;
+  float: left;
+  font-family: 'Times New';
+  color: #842020;
+  font-size: 18px;
+  margin-top: 20px;
+}
+.list-ala li .cont-ala
+{
+  float: left;
+  margin-top: 10px;
+}
+
+.txt-escolha 
+{
+  width: 100%;
+  float: left;
+  font-size: 14px;
+  font-family: 'TImes New';
+  text-align: center;
+
+}
+.bt-marmita
+{
+  width: 49%;
+float: left;
+border-right: 1px solid #ccc;
+margin-top: 30px;
+margin-bottom: 109px;
+}
+.bt-marmita.right
+{
+  border: none;
+}
+.bt-marmita .ic-marmita
+{
+  background-position: -85px -73px;
+  width: 56px;
+  height: 56px;
+  float: right;
+}
+.bt-marmita .ic-lacarte
+{
+  background-position: -11px -126px;
+  width: 44px;
+  height: 60px;
+}
+.bt-marmita .btn-1
+{
+  float: right;
+  margin: 13px 20px 0 20px;
+}
+.bt-marmita.right .btn-1
+{
+  float: left;
+}
+
+.list-ala .bt-compra
+{
+  float: right;
+}

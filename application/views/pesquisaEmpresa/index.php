@@ -1,0 +1,182 @@
+<!-- $testeEmail: klecio@lumenagencia.com.br -->
+<style>
+    /*#formPesquisaSatis fieldset{ display: block; clear: both; }*/
+    #formPesquisaSatis{ font-family: "Times New"; }
+    /*#formPesquisaSatis .col-md-5{ width: 30%; float: left; }*/
+    /*#formPesquisaSatis .col-md-5 span{ display: block; line-height: 40px; }*/
+    /*#formPesquisaSatis .col-md-8{ width: 69%; float: right; margin-right: -40px; }*/
+    #formPesquisaSatis .row { margin-bottom: 10px; }
+    #formPesquisaSatis .col-md-7 span{ width: 23%; vertical-align: middle; text-align: center; display: inline-block; position: relative; }
+    #formPesquisaSatis .col-md-7 span *{ vertical-align: middle; }
+    #formPesquisaSatis .col-md-5 strong{ display: block; margin-bottom: 10px; }
+    #formPesquisaSatis textarea{ width: 100%;
+        height: 100px;
+        float: left;
+        margin-bottom: 10px;
+        border-radius: 7px;
+        border: 1px solid #e3e3e3;
+        border-bottom: 3px solid #8e1813;
+        font-family: 'Times New';
+        font-size: 23px;
+    }
+    #formPesquisaSatis .labelBox{ display: block; margin: auto; border: 1px solid #3C3C3C; padding: 2px; width: 22px; height: 22px; }
+    #formPesquisaSatis .labelBox span{ width: 100%; height: 100%; display: block; background: transparent; }
+    #formPesquisaSatis .labelBox:hover span, #formPesquisaSatis .radio:checked + .labelBox span,
+    #formPesquisaSatis .labelBox.active span{ background: #3C3C3C; }
+    #formPesquisaSatis .radio{ display: none; }
+    .labelEmpresa{ line-height: 30px; }
+    .bt-enviar-contato{ margin: 0; }
+</style>
+
+<section id="wrap-centro">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8">
+                <div id="content-conteudo">
+                    <h1 class="titulos-1">Pesquisa de  <span>Empresa</span></h1>
+                    <p>Obrigado por escolher o Paraíba Refeições. Para aprimorarmos nossos serviços, por favor, dê sua opnião.</p>
+                    <?php if (isset($erros)): ?>
+                        <div class="alert alert-warning">
+                            <p><?php echo $erros ?></p>
+                        </div>
+                    <?php endif ?>
+                    <form action="<?= base_url('pesquisa_empresa') ?>" method="post" id="formPesquisaSatis">
+                        <input type="hidden" name="tipo" value="empresa">
+                        <div class="row">
+                            <div class="col-md-5">
+                                <span>&nbsp;</span>
+                            </div>
+                            <div class="col-md-7">
+                                <span><strong>Ótimo</strong></span>
+                                <span><strong>Bom</strong></span>
+                                <span><strong>Regular</strong></span>
+                                <span><strong>Ruim</strong></span>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-5"><strong>1) Atendimento</strong></div>
+                            <div class="col-md-7">
+                                <span>
+                                    <input type="radio" name="atend" value="Ótimo" class="radio" id="atend-4" required >
+                                    <label for="atend-4" class="labelBox" title="Ótimo"><span></span></label>
+                                </span>
+                                <span>
+                                    <input type="radio" name="atend" value="Bom" class="radio" id="atend-3" checked required >
+                                    <label for="atend-3" class="labelBox" title="Bom"><span></span></label>
+                                </span>
+                                <span>
+                                    <input type="radio" name="atend" value="Regular" class="radio" id="atend-2" required >
+                                    <label for="atend-2" class="labelBox" title="Regular"><span></span></label>
+                                </span>
+                                <span>
+                                    <input type="radio" name="atend" value="Ruim" class="radio" id="atend-1" required >
+                                    <label for="atend-1" class="labelBox" title="Ruim"><span></span></label>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-5"><strong>2) Qualidade dos Alimentos</strong></div>
+                            <div class="col-md-7">
+                                <span>
+                                    <input type="radio" name="alimentos" value="Ótimo" class="radio" id="alimentos-4" required >
+                                    <label for="alimentos-4" class="labelBox" title="Ótimo"><span></span></label>
+                                </span>
+                                <span>
+                                    <input type="radio" name="alimentos" value="Bom" class="radio" id="alimentos-3" checked required >
+                                    <label for="alimentos-3" class="labelBox" title="Bom"><span></span></label>
+                                </span>
+                                <span>
+                                    <input type="radio" name="alimentos" value="Regular" class="radio" id="alimentos-2" required >
+                                    <label for="alimentos-2" class="labelBox" title="Regular"><span></span></label>
+                                </span>
+                                <span>
+                                    <input type="radio" name="alimentos" value="Ruim" class="radio" id="alimentos-1" required >
+                                    <label for="alimentos-1" class="labelBox" title="Ruim"><span></span></label>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-5"><strong>3) Qualidade das Bebidas</strong></div>
+                            <div class="col-md-7">
+                                <span>
+                                    <input type="radio" name="bebidas" value="Ótimo" class="radio" id="bebidas-4" required >
+                                    <label for="bebidas-4" class="labelBox" title="Ótimo"><span></span></label>
+                                </span>
+                                <span>
+                                    <input type="radio" name="bebidas" value="Bom" class="radio" id="bebidas-3" checked required >
+                                    <label for="bebidas-3" class="labelBox" title="Bom"><span></span></label>
+                                </span>
+                                <span>
+                                    <input type="radio" name="bebidas" value="Regular" class="radio" id="bebidas-2" required >
+                                    <label for="bebidas-2" class="labelBox" title="Regular"><span></span></label>
+                                </span>
+                                <span>
+                                    <input type="radio" name="bebidas" value="Ruim" class="radio" id="bebidas-1" required >
+                                    <label for="bebidas-1" class="labelBox" title="Ruim"><span></span></label>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-5"><strong>4) Delivery </strong></div>
+                            <div class="col-md-7">
+                                <span>
+                                    <input type="radio" name="delivery" value="Ótimo" class="radio" id="delivery-4" required >
+                                    <label for="delivery-4" class="labelBox" title="Ótimo"><span></span></label>
+                                </span>
+                                <span>
+                                    <input type="radio" name="delivery" value="Bom" class="radio" id="delivery-3" checked required >
+                                    <label for="delivery-3" class="labelBox" title="Bom"><span></span></label>
+                                </span>
+                                <span>
+                                    <input type="radio" name="delivery" value="Regular" class="radio" id="delivery-2" required >
+                                    <label for="delivery-2" class="labelBox" title="Regular"><span></span></label>
+                                </span>
+                                <span>
+                                    <input type="radio" name="delivery" value="Ruim" class="radio" id="delivery-1" required >
+                                    <label for="delivery-1" class="labelBox" title="Ruim"><span></span></label>
+                                </span>
+                            </div>
+                        </div>
+
+                        <div style="clear: both; overflow:hiden; display: block; margin-top: 40px;"></div>
+
+                        <fieldset>
+                            <label for="mensagem">Sugestões e Comentários</label>
+                            <textarea name="mensagem" id="mensagem"></textarea>
+                        </fieldset>
+                        <fieldset>
+                            <div class="row">
+                               <div class="col-md-9">
+                                <div class="row">
+                                    <div class="col-md-3">
+                                        <label class="labelEmpresa" for="empresa">Empresa</label>
+                                    </div>
+                                    <div class="col-md-9">
+                                        <input type="text" class="form-control" name="empresa" id="empresa" required/>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="bt-login btn-1 bt-enviar-contato">
+                                    <input type="submit" value="Enviar">
+                                </div>
+                            </div>
+                        </fieldset>
+                    </form>
+                </div><!--/content-conteudo-->
+            </div>
+            <div class="col-md-4">
+                <div id="sid-right">
+                    <nav id="nav-interna">
+                        <ul>
+                            <li class="activ"><a href="<?= site_url('institucional')?>">Institucional</a></li>
+                            <li><a href="<?= site_url('institucional/ambiente')?>">Ambiente</a></li>
+                            <li><a href="<?= site_url('institucional/clientes')?>">Clientes</a></li>
+                        </ul>
+                    </nav>
+                    <? $this->load->view('sidebar/right')?>
+                </div><!--/sid-right-->
+            </div>
+        </div>
+    </div><!--/center-->
+</section><!--/wrap-centro-->
